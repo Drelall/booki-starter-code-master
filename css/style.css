@@ -59,17 +59,33 @@ a {
 }
 /*le menu*/
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;/*met les deux éléments du menu à l'horizontal*/
+    justify-content: space-between;/*espace les deux éléments du menu*/
+    align-items: center;/*permet de centrer l'image/logo*/
 }
-
 ul {
-    display: flex;
-    gap: 16px;
-    list-style: none;
+    display: flex;/*met l'éléments ul à l'horizontal*/
+    gap: 16px;/*séparation entre chaque éléments de navigation*/
+    list-style: none;/*retire les points de la balise*/
 }
+    a:hover {
+        color: #0065FC; /* Couleur par défaut */
+        text-decoration: none; /* Pas de soulignement par défaut */
+        position: relative; /* Nécessaire pour placer une bordure au-dessus */
+    }
+    
+    a:before { /*Pour afficher une "bordure de soulignement" au-dessus du texte*/
+        content: ""; /* Nécessaire pour créer un pseudo-élément */
+        position: absolute;
+        top: -5px; /* Positionne la bordure au-dessus du texte */
+        left: 0;
+        width: 100%; /* Largeur totale du texte */
+        height: 2px; /* Épaisseur de la bordure */
+        background-color: #0065FC; /* Couleur de la bordure */
+        transition: all 0.3s ease; /* Animation fluide */
+    }
 /*le menu*/
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
