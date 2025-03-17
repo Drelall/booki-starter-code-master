@@ -89,6 +89,10 @@ ul {
 form {
     display: flex;/*met l'éléments de recherche à l'horizontal*/
 }
+form img {
+    width: 50px; /* Ajuste la taille de l'icône */
+    height: 49px;
+}
 input#rechercher {
     padding: 10px;/*marge*/
     border: 1px solid #F2F2F2;/*bordure*/
@@ -96,11 +100,56 @@ input#rechercher {
 input[type="submit"] {
     color: #ffffff;/*couleur de texte du bouton*/
     font-weight: bold;/*style de texte du bouton*/
-    border-radius: 0 20px 20px 0;/*arrondit le côté droit du bouton*/
+    border-radius: 0 25px 25px 0;/*arrondit le côté droit du bouton*/
     background-color: #0065fc;/*couleur de fond du bouton*/
-    border: 2px solid #0065fc; /* Définit précisément la taille et type de bordure + la couleur */
+    border: 1px solid #0065fc; /* Définit précisément la taille et type de bordure + la couleur */
     }
 /*Le formulaire de recherche*/
+
+/*Les filtres*/
+.bardefiltres {
+    display: flex;/*met l'éléments de recherche à l'horizontal*/
+    justify-content: space-between;/*espace les deux éléments du menu*/
+    align-items: center;/*permet de centrer l'image/logo*/
+    margin-right: 700px; /*l'espacement entre les boutons*/
+    margin-top: 15px;
+}
+button.bouton {
+    border-radius: 25px;/*arrondi les angles*/
+    background-color: #ffffff;/*le fond du bouton*/
+    font-weight: bold;/*Texte en gras*/
+    border: 2px solid #d9d9d9;
+    display: flex; /* Active Flexbox pour un alignement précis */
+    align-items: center; /* Centre verticalement le contenu (icône et texte) */
+    justify-content: center; /* Centre horizontalement le contenu */
+    gap: 10px; /* Espace entre l'icône et le texte */
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 173px;
+    margin-right: 15px;
+}
+button:hover{
+    background-color: #DEEBFF;
+}
+button.bouton img {
+    width: 20px; /* Taille de l'icône */
+    height: auto; /* Maintient les proportions */
+    }
+.bardefiltres p {
+    margin-right: 15px; /*l'espacement entre les boutons*/
+    }
+/*Les filtres*/
+
+/*info-bar*/
+.information {
+    display: flex;
+    justify-content: space-between;/*espace les deux éléments du menu*/
+    align-items: center;/*permet de centrer l'image/logo*/  
+}
+/*info-bar*/
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
