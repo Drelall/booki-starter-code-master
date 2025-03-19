@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;/*permet de supprimer l'espace par défaut que certains navigateurs ajoutent autour du contenu*/
 }
 
 .main-container {
@@ -63,10 +64,15 @@ nav {
     justify-content: space-between;/*espace les deux éléments du menu*/
     align-items: center;/*permet de centrer l'image/logo*/
 }
+nav img{
+    margin-top: 25px;/*marge du dessus*/
+    margin-left: -0.5px;/*marge de gauche*/
+}
 ul {
     display: flex;/*met l'éléments ul à l'horizontal*/
     gap: 16px;/*séparation entre chaque éléments de navigation*/
     list-style: none;/*retire les points de la balise*/
+    Margin: 0;
 }
     a:hover {
         color: #0065FC; /* Couleur par défaut */
@@ -77,7 +83,7 @@ ul {
     a:before { /*Pour afficher une "bordure de soulignement" au-dessus du texte*/
         content: ""; /* Nécessaire pour créer un pseudo-élément */
         position: absolute;
-        top: -5px; /* Positionne la bordure au-dessus du texte */
+        top: -13px; /* Positionne la bordure au-dessus du texte */
         left: 0;
         width: 100%; /* Largeur totale du texte */
         height: 2px; /* Épaisseur de la bordure */
@@ -85,6 +91,16 @@ ul {
         transition: all 0.3s ease; /* Animation fluide */
     }
 /*le menu*/
+/*Le titre*/
+.trouver {
+    margin-top: 50px;/* espace la marge du haut */
+}
+.trouver h2,
+.trouver p {
+  margin: 6;/* espace entre h2 et p */
+  margin-left: 0px;/* espace marge gauche */
+}
+/*Le titre*/
 /*Le formulaire de recherche*/
 form {
     display: flex;/*met l'éléments de recherche à l'horizontal*/
@@ -96,6 +112,11 @@ form img {
 input#rechercher {
     padding: 10px;/*marge*/
     border: 1px solid #F2F2F2;/*bordure*/
+    outline: none;
+    font-weight: bold;
+}
+input#rechercher::placeholder {
+    color: black; /* changez la couleur*/
 }
 input[type="submit"] {
     color: #ffffff;/*couleur de texte du bouton*/
@@ -123,12 +144,10 @@ button.bouton {
     align-items: center; /* Centre verticalement le contenu (icône et texte) */
     justify-content: center; /* Centre horizontalement le contenu */
     gap: 10px; /* Espace entre l'icône et le texte */
-    padding-top: 4px;/* Espace haut */
-    padding-bottom: 4px;/* Espace bas */
+    padding-top: 6px;/* Espace haut */
+    padding-bottom: 6px;/* Espace bas */
     padding-left: 10px;/* Espace gauche */
-    padding-right: 10px;/* Espace droite */
-    height: 50px;/* taille du bouton */
-    width: 173px;/* taille du bouton */
+    padding-right: 13px;/* Espace droite */
     margin-right: 15px;/* espacement entre les boutons */
 }
 button:hover{/* permet de mettre une couleur au survole du bouton */
@@ -146,9 +165,10 @@ button.bouton img {
 /*info-bar*/
 .information {
     display: flex;/*met l'éléments de recherche à l'horizontal*/
-    justify-content: space-between;/*espace les deux éléments du menu*/
     align-items: center;/*permet de centrer l'image/logo*/  
-    margin-right: 795px;/*l'espacement entre le texte et l'icone info'*/
+    }
+.information img {
+    margin-right: 10px;
 }
 /*info-bar*/
 
