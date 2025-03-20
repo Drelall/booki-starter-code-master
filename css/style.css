@@ -74,7 +74,7 @@ ul {
     list-style: none;/*retire les points de la balise*/
     Margin: 0;
 }
-    a:hover {
+    .navigation a:hover {
         color: #0065FC; /* Couleur par défaut */
         text-decoration: none; /* Pas de soulignement par défaut */
         position: relative; /* Nécessaire pour placer une bordure au-dessus */
@@ -173,6 +173,23 @@ button.bouton img {
 /*info-bar*/
 
 /*Hébergement à Marseille*/
+.premiereligne {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -50px;
+}
+.deuxiemeligne {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.affichezplus {
+    margin-left: -35px;
+    margin-top: 30px;
+    margin-bottom: -40px;
+}
 .marseille {
     margin-top: -20px;/*alignement de la marge avec "Les plus populaires*/
 }
@@ -182,19 +199,91 @@ button.bouton img {
     border-radius: 20px;
     width: 250.33px;
     height:207.25px ;
+    padding: 5px;
+}
+.hotelauberge div > * {
+    margin: 0px; /* Supprime toutes les marges */
+    padding: 0px; /* Supprime les espacements internes, si nécessaire */
 }
 .hotelauberge img {
     width: 250.33px;
     height:124px ;
     border-radius: 20px 20px 0 0;
 }
-
+.hotelauberge img.etoile {
+    width: 81px;
+    height:13.25px;
+}
 /*Hébergement à Marseille*/
+/*activité à Marseille*/
+.marseille {
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+.marseille1 {
+    margin-bottom: 50px;
+    margin-left: 0px;
+}
+.activite {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -20px;
+    margin-left: 450px;
+}
+.portfortparcdame img {
+    width: 250.33px;
+    height:124px ;
+    border-radius: 20px 20px 0 0;
+    width: 297.5px;
+    height: 439px;
+    object-fit:cover;/*permet que l'image ne soit pas déformé*/
+}
+article.portfortparcdame {
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+}
+h3.cartehote {
+    margin-left: 20px;
+}
+/*activité à Marseille*/
+/*pieddepage*/
+.pieddepage {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+ul.apropos {
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+}
+ul.apropos2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+ul.apropos3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
 
+footer {
+    background-color: #f2f2f2;/*fond du pied de page*/
+
+  }
+
+/*pied de page*/
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
 
 .hebergements-and-populaires section {

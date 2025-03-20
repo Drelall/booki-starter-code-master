@@ -21,7 +21,7 @@
             <nav>
                 <img src="images/logo/Logo - small2.png" alt="image du logo">
 
-                <ul>
+                <ul class="navigation">
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
                 </ul>
@@ -82,87 +82,70 @@
 
             <div class="hebergements-and-populaires"><!--les deux offres-->
                 <section class="hebergements"><!--Hébergement à Marseille-->
-                    <div class="marseille"><!--Titre-->
+                    <div class="marseille1"><!--Titre-->
                         <h2>Hébergements à Marseille</h2>
                     </div><!--Titre-->
 
                     <section><!--Offres principales-->
                         <div>
-
-                        <article class="hotelauberge"><!--Frame 15, card/main-->
-                            <div>
-                                <img src="images/hebergements/fred-kleber.jpg" alt="Photo-hôtel du port">
+                         <div class="premiereligne"><!--1ère ligne-->
+                            <article class="hotelauberge">
                                 <div>
-                                    <h3>Hôtel du port</h3>
-                                    <p>Nuit à partir de 52€</p>
+                                    <img src="images/hebergements/fred-kleber.jpg" alt="Photo-hôtel du port">
+                                    <h3 class="cartehote">Hôtel du port</h3>
+                                    <p class="carteprix">Nuit à partir de 52€</p>
+                                    <img src="images/Icon/Stars.png" alt="avis" class="etoile">
                                 </div>
+                            </article>
+                            <article class="hotelauberge">
                                 <div>
-                                    <span class="sr-only">Note de 4 sur 5</span>
-                                </div>
-                            </div>
-                        </article><!--Frame 15, card/main-->
-
-                        <article class="hotelauberge"><!--Frame 15, card/main-->
-                            <div>
-                                <img src="images/hebergements/febrian-zakaria.jpg" alt="Photo-hôtel Chez Amina">
-                                <div>
+                                    <img src="images/hebergements/febrian-zakaria.jpg" alt="Photo-hôtel Chez Amina">
                                     <h3>Hôtel Chez Amina</h3>
                                     <p>Nuit à partir de 96€</p>
+                                    <img src="images/Icon/Stars.png" alt="avis" class="etoile">
                                 </div>
+                            </article>
+                            <article class="hotelauberge">
                                 <div>
-                                    <span class="sr-only">Note de 4 sur 5</span>
-                                </div>
-                            </div>
-                        </article><!--Frame 15, card/main-->
-                        <article class="hotelauberge"><!--Frame 15, card/main-->
-                            <div>
-                                <img src="images/hebergements/reisetopia.jpg" alt="Photo-hôtel Les mouettes">
-                                <div>
+                                    <img src="images/hebergements/reisetopia.jpg" alt="Photo-hôtel Les mouettes">
                                     <h3>Hôtel Les mouettes</h3>
                                     <p>Nuit à partir de 76€</p>
+                                    <img src="images/Icon/Stars.png" alt="avis" class="etoile">
                                 </div>
-                                <div>
-                                    <span class="sr-only">Note de 4 sur 5</span>
-                        </article><!--Frame 15, card/main-->
+                            </article>
+                        </div><!--1ère ligne-->
+
+                    <div class="deuxiemeligne"><!--2ème ligne-->
                         <article class="hotelauberge"><!--Column 2, card/main-->
                             <div>
                                 <img src="images/hebergements/annie-spratt.jpg" alt="Photo-hôtel de la mer">
-                                <div>
-                                    <h3>Hôtel de la mer</h3>
-                                    <p>Nuit à partir de 46€</p>
-                                </div>
-                                <div>
-                                    <span class="sr-only">Note de 4 sur 5</span>
-                                </div>
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de 46€</p>
+                                <img src="images/Icon/Stars.png" alt="avis" class="etoile">
                             </div>
                         </article><!--Column 2, card/main-->
+
                         <article class="hotelauberge"><!--Column 2, card/main-->
                             <div>
                                 <img src="images/hebergements/marcus-loke.jpg" alt="Photo-Auberge de La Canebière">
-                                <div>
-                                    <h3>Auberge de La Canebière</h3>
-                                    <p>Nuit à partir de 25€</p>
-                                </div>
-                                <div>
-                                    <span class="sr-only">Note de 4 sur 5</span>
-                                </div>
+                                <h3>Auberge de La Canebière</h3>
+                                <p>Nuit à partir de 25€</p>
+                                <img src="images/Icon/Stars.png" alt="avis" class="etoile">
                             </div>
                         </article><!--Column 2, card/main-->
+
                         <article class="hotelauberge"><!--Column 2, card/main-->
                             <div>
                                 <img src="images/hebergements/nicate-lee.jpg" alt="Photo-Auberge Le Panier">
-                                <div>
-                                    <h3>Auberge Le Panier</h3>
-                                    <p>Nuit à partir de 25€</p>
-                                </div>
-                                <div>
-                                    <span class="sr-only">Note de 4 sur 5</span>
-                                </div>
+                                <h3>Auberge Le Panier</h3>
+                                <p>Nuit à partir de 25€</p>
+                                <img src="images/Icon/Stars.png" alt="avis" class="etoile">
                             </div>
                         </article><!--Column 2, card/main-->
                         </div>
-    
-                        <div><!--Affichez plus-->
+                    </div>
+
+                        <div class="affichezplus"><!--Affichez plus-->
                             <h3>Affichez plus</h3>
                         </div><!--Affichez plus-->
             </section><!--Offres principales-->
@@ -236,70 +219,66 @@
             </div><!--les deux offres-->
         
         <section><!--Activités--> 
+            <div><!--activité-->
+                <section class="hebergements"><!--activité à Marseille-->
+                    <div class="marseille"><!--Titre-->
+                        <h2>Activité à Marseille</h2>
+                            </div><!--Titre-->
+                                <section><!--les quatre activité-->
+                                        <div class="activite"><!--ligne-->
+                                                <article class="portfortparcdame">
+                                                    <div>
+                                                        <img src="images/activites/reno-laithienne.jpg" alt="vieux-port">
+                                                        <h3 class="cartehote">Vieux-Port</h3>
+                                                    </div>
+                                                </article>
 
-            <div><!--Titre-->
-                <h2>Activités à Marseille</h2>
-            </div><!--Titre-->
+                                                <article class="portfortparcdame">
+                                                    <div>
+                                                        <img src="images/activites/paul-hermann.jpg" alt="fort de pomègues">
+                                                        <h3 class="cartehote">Fort de pomègues</h3>
+                                                    </div>
+                                                </article>
 
-            <div>
-            <article><!--Card1--> 
-                <div>
-                    <img src="images/activites/reno-laithienne.jpg" alt="Vieux-Port">
-                    <h3>Vieux-Port</h3>
-                </div>
-            </article><!--Card1--> 
-            
+                                                <article class="portfortparcdame">
+                                                    <div>
+                                                        <img src="images/activites/kilyan-sockalingum.jpg" alt="parc national des calanques">
+                                                        <h3 class="cartehote">Parc national des Calanques</h3>
+                                                    </div>
+                                                </article>
 
-            
-            <article><!--Card2--> 
-                <div>
-                    <img src="images/activites/paul-hermann.jpg" alt="Fort de Pomègues">
-                    <h3>Fort de Pomègues</h3>
-                </div>
-            </article><!--Card2--> 
-            
-
-            
-            <article><!--Card3--> 
-                <div>
-                    <img src="images/activites/kilyan-sockalingum.jpg" alt="Parc national des Calanques">
-                    <h3>Parc national des Calanques</h3>
-                </div>
-            </article><!--Card3--> 
-            
-
-            
-            <article><!--Card4--> 
-                <div>
-                    <img src="images/activites/florian-wehde.jpg" alt="Notre-Dame-de-la-Garde">
-                    <h3>Notre-Dame-de-la-Garde</h3>
-                </div>
-            </article><!--Card4--> 
-            </div>
-
-        </section>
-        </main>
+                                                </article>
+                                                <article class="portfortparcdame">
+                                                    <div>
+                                                        <img src="images/activites/florian-wehde.jpg" alt="notre dame de la garde">
+                                                        <h3 class="cartehote">Notre-Dame-de-la-Garde</h3>
+                                                    </div>
+                                                </article>
+                                         </div><!--ligne-->
+                              </section><!--activité à Marseille-->
+                       </div><!--activité -->
+                 </main>
 
         <footer>
-            <section><!--Pied de page--> 
-                <div>
-                    <h3>À propos</h3>
-                    <ul>
+            <section class="pieddepage"><!--Pied de page--> 
+                <div class="fond">
+                    <ul class="apropos">
+                        <h3>À propos</h3>
                         <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditions générales</a></li>
                         <li><a href="#">Données et confidentialité</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Nos Hébergements</h3>
-                    <ul>
+                    <ul class="apropos2">
+                        <h3>Nos Hébergements</h3>
                         <li><a href="#">Charte qualité</a></li>
                         <li><a href="#">Proposer votre hôtel</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Assistance</h3>
-                    <ul>
+                    <ul class="apropos3">
+                        <h3>Assistance</h3>
                         <li><a href="#">Centre d'aide</a></li>
                         <li><a href="#">Nous contacter</a></li>
                     </ul>
