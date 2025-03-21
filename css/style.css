@@ -173,6 +173,10 @@ button.bouton img {
 /*info-bar*/
 
 /*Hébergement à Marseille*/
+h2.hebergement {
+    margin-top: -4px;
+    margin-bottom: 55px;
+}
 .carte {
     margin-left: 10px;
     display: flex;
@@ -229,7 +233,7 @@ button.bouton img {
     margin-left: 30px;
 }
 .marseille1 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-left: 0px;
 }
 .activite {
@@ -241,8 +245,8 @@ button.bouton img {
 }
 .portfortparcdame img {
     border-radius: 20px 20px 0 0;
-    width: 320px;
-    height: 400px;
+    width: 300px;
+    height: 370px;
     object-fit:cover;/*permet que l'image ne soit pas déformé*/
 }
 article.portfortparcdame {
@@ -257,16 +261,14 @@ h3.cartehote {
 .pieddepage {
     margin-top: 70px;
     margin-bottom: 50px;
-    margin-left: 30px;
+    margin-left: 5px;
     display: flex;
     padding-top: 10px;
     padding-bottom: 30px;
-    gap: 265px;/*espacement entre les colonnes*/
+    gap: 235px;/*espacement entre les colonnes*/
 }
 footer {
     background-color: #f2f2f2;/*fond du pied de page*/
-    margin-right: -25px;
-    margin-left: -40px;
 }
 .fond {
     display: flex;
@@ -280,7 +282,7 @@ footer {
     margin-bottom: 10px; /* Espace entre le titre et le texte */
 }
 h3.apropos {
-    margin-bottom: auto;
+    margin-bottom: initial;
 }
  /*pied de page*/
 /****** Hebergements And Populaires ***********/
