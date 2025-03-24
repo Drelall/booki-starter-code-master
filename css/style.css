@@ -357,6 +357,9 @@ h3.apropos {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1440px) {
+}
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
@@ -388,9 +391,78 @@ h3.apropos {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activite{
+        width: 2%;
+    }
+    /*hebergements a Marseille*/
+    .portfortparcdame img {
+        border-radius: 20px 20px 0 0;
+        width: 200px;/* modif de largeur */
+        height: 270px;/* modif de hauteur */
+        object-fit: cover;
+    }
+    /*hebergements a Marseille*/
+    /*infos*/
+    .pieddepage {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-left: 5px;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        gap: 150px;/* modif pour que le texte soit sur la même ligne */
+    }
+    /*infos*/
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /* ... */
+    /*hebergement a Marseille*/
+    .hotelauberge img {
+        width: 190.33px;/* modif pour que toutes les cartes rentrent dans le fond */
+        height: 124px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    .carte {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0px;/* modif pour que le texte rentre dans la carte */
+    }
+    .portfortparcdame img {
+        border-radius: 20px 20px 0 0;
+        width: 170px;
+        height: 150px;
+        object-fit: cover;
+    }
+    /*hebergements a Marseille*/
+    /*activite a Marseille*/
+    .activite {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: -20px;
+        margin-left: 327px;/* ajustement de la marge*/
+    }
+    .portfortparcdame img {
+        border-radius: 20px 20px 0 0;
+        width: 150px;
+        height: 120px;/* ajustement de la marge*/
+        object-fit: cover;
+    }
+    /*activite a Marseille*/
+    /*info*/
+    .pieddepage {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-left: 5px;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        gap: 20px;
+    }
+    /*info*/
 }
